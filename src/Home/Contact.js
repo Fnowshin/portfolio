@@ -24,10 +24,14 @@ const Contact = (props) => {
             <div className="hero" style={{ backgroundImage: `url("https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png")` }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    <div className="text-center lg:text-left">
+                    <div data-aos="flip-right"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000" className="text-center lg:text-left">
                         <h1 className="text-5xl font-bold text-white">Get In Touch!</h1>
                     </div>
-                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                    <div data-aos="fade-right"
+                        data-aos-offset="200"
+                        data-aos-easing="ease-in-sine" className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <div className="card-body">
                             <form ref={form} onSubmit={sendEmail}>
                                 <label className='label'>Name</label>
